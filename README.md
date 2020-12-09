@@ -77,7 +77,13 @@ Rename the file to *firebase-key.json*
         NEXT_PUBLIC_XKIT_SECRET_KEY=<put_secret_key_here>
         NEXT_PUBLIC_XKIT_DOMAIN=<put_url_slug_here>
         
-16. On the *Settings tab* make sure that *Valid Web Origins* has *http://localhost:3000*.
+16. On the *Settings* tab go to *Valid Web Origins* and add *http://localhost:3000*.
+
+17. Still on *Settings* go to *User Tokens* and click on *Add Custom Issuer*.<br>
+For the *iss Claim*, use the value https://securetoken.google.com/{projectId} where {projectId} is the Firebase project ID,<br>the unique identifier for your Firebase project, which can be found in the URL of that project's console.<br>
+For the *aud Claim*, use the {projectId} value.<br>
+For the *User ID Claim*, keep it as *sub*.<br>
+For the *JSON Web Key Set URL*, use the value https://www.googleapis.com/service_accounts/v1/jwk/securetoken@system.gserviceaccount.com
         
 ### Hooray, that was all!<br>
 To view the result, run `npm run dev` in the project folder and go to http://localhost:3000.
