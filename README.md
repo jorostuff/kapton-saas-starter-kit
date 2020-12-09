@@ -9,7 +9,7 @@
 
 1. Download/clone the repository.
     
-    `git clone https://github.com/kaptona/saas-starter.git`
+    `git clone https://github.com/kaptona/kapton-saas-starter-kit`
 
 #### Installing the required packages
 
