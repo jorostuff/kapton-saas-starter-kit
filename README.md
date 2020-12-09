@@ -80,7 +80,7 @@ Rename the file to *firebase-key.json*
 16. On the *Settings* tab go to *Valid Web Origins* and add *http://localhost:3000*.
 
 17. Still on *Settings* go to *User Tokens* and click on *Add Custom Issuer*.<br>
-For the *iss Claim*, use the value https://securetoken.google.com/{projectId} where {projectId} is the Firebase project ID,<br>the unique identifier for your Firebase project, which can be found in the URL of that project's console.<br>
+For the *iss Claim*, use the value https://securetoken.google.com/{projectId} where {projectId} is the Firebase project ID, the unique identifier for your Firebase project, which can be found in the URL of that project's console.<br>
 For the *aud Claim*, use the {projectId} value.<br>
 For the *User ID Claim*, keep it as *sub*.<br>
 For the *JSON Web Key Set URL*, use the value https://www.googleapis.com/service_accounts/v1/jwk/securetoken@system.gserviceaccount.com
