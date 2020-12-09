@@ -13,7 +13,7 @@
 
 #### Installing the required packages
 
-2. Go to the downloaded/cloned folder and install the dependencies like this:
+2. Go to the downloaded/cloned folder and install the dependencies using:
     
     `npm install` or `yarn install`
 
@@ -25,26 +25,31 @@
 
 4. Create a Firebase account [here](https://firebase.google.com/).
 
-5. Go to the Firebase console and set up *Authentication* and *Cloud Firestore*.
+5. Go to the Firebase console and create an app by clicking on *Add app*.
 
-6. Go to the Firebase project settings and find the Firebase SDK config details.
+6. Set up *Authentication* and *Cloud Firestore*.
 
-7. Open the *.env.local* file and put the Firebase SDK config details there like this:
+7. Go to the Firebase project settings and find the Firebase SDK config details under *Your apps*.
+
+8. Open the *.env.local* file and put the Firebase SDK config details there like so:
 
         NEXT_PUBLIC_FIREBASE_API_KEY=<put_api_key_here>
         NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=<put_auth_domain_here>
-        NEXT_PUBLIC_FIREBASE_DATABASE_URL=<put_database_url_here>
         NEXT_PUBLIC_FIREBASE_PROJECT_ID=<put_project_id_here>
         NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=<put_storage_bucket_here>
         NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=<put_messaging_sender_id>
         NEXT_PUBLIC_FIREBASE_APP_ID=<put_app_id_here>
         
-8. Go to Firebase project settings and click on *Service Accounts*.<br>
-Then on Firebase Admin SDK, generate a private key. Drag and drop the downloaded file in the project folder.<br>
+9. Go to Firebase project settings and click on *Service Accounts*.<br>
+Then on Firebase Admin SDK, *Create service account* and generate new private key. Drag and drop the downloaded file in the project folder.<br>
 Rename the file to *firebase-key.json*
-        
+
+10. Still on the *Service Accounts* tab, find *databaseURL* and paste it in *.env.local* like so: 
+
+        NEXT_PUBLIC_FIREBASE_DATABASE_URL=<put_database_url_here>
+
 #### Setting up Firestore
-9. Go to the Firebase console, open the  *Cloud Firestore* tab and click on *Rules*. Then copy-paste this there:
+11. Go to the Firebase console, open the  *Cloud Firestore* tab and click on *Rules*. Then copy-paste this there:
         
         rules_version = '2';
         service cloud.firestore {
@@ -54,22 +59,25 @@ Rename the file to *firebase-key.json*
             }
           }
         }
+        
     While these rules are valid, they are not recommended for production applications.<br>
     You can check out [security rules](https://firebase.google.com/docs/firestore/security/get-started) to learn more.
 
 #### Setting up Xkit
 
-10. Create an Xkit account [here](https://xkit.co/).
+12. Create an Xkit account [here](https://xkit.co/).
 
-11. Go to the *New Connector* tab and install a connector/s.
+13. Go to the *New Connector* tab and install a connector/s.
 
-12. Go to the *Settings* tab, scroll down to *API Keys*, and click on *Generate API Key*. 
+14. Go to the *Settings* tab, scroll down to *API Keys*, and click on *Generate API Key*. 
 
-13. Open the *.env.local* file and put the Xkit Publishable Key, Secret Key and URL Slug like this:
+15. Open the *.env.local* file and put the Xkit Publishable Key, Secret Key and URL Slug (you can find it on the settings page) like this:
         
         NEXT_PUBLIC_XKIT_PUBLISHABLE_KEY=<put_publishable_key_here>
         NEXT_PUBLIC_XKIT_SECRET_KEY=<put_secret_key_here>
         NEXT_PUBLIC_XKIT_DOMAIN=<put_url_slug_here>
+        
+16. On the *Settings tab* make sure that *Valid Web Origins* has *http://localhost*.
         
 ### Hooray, that was all!<br>
 To view the result, run `npm run dev` in the project folder and go to http://localhost:3000.
