@@ -77,7 +77,7 @@ Rename the file to *firebase-key.json*
         NEXT_PUBLIC_XKIT_SECRET_KEY=<put_secret_key_here>
         NEXT_PUBLIC_XKIT_DOMAIN=<put_url_slug_here>
         
-16. On the *Settings tab* make sure that *Valid Web Origins* has *http://localhost*.
+16. On the *Settings tab* make sure that *Valid Web Origins* has *http://localhost:3000*.
         
 ### Hooray, that was all!<br>
 To view the result, run `npm run dev` in the project folder and go to http://localhost:3000.
