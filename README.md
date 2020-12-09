@@ -1,7 +1,7 @@
 # Kapton's SaaS Starter Kit
 *A SaaS boilerplate written in Next.js, Firebase (and Firestore), Xkit and Chakra UI.*
 
-**Preview here:** <a href="https://saas-starter.vercel.app/" target="_blank">https://saas-starter.vercel.app/</a>
+**Preview here:** https://saas-starter.vercel.app/ 
 
 ## How to setup
 
@@ -23,7 +23,7 @@
 
 #### Setting up Firebase
 
-4. Create a Firebase account <a href="https://firebase.google.com/" target="_blank">here</a>.  
+4. Create a Firebase account [here](https://firebase.google.com/).
 
 5. Go to the Firebase console and set up *Authentication* and *Cloud Firestore*.
 
@@ -55,11 +55,11 @@ Rename the file to *firebase-key.json*
           }
         }
     While these rules are valid, they are not recommended for production applications.<br>
-    You can check out <a href="https://firebase.google.com/docs/firestore/security/get-started" target="_blank">security rules</a> to learn more.
+    You can check out [security rules](https://firebase.google.com/docs/firestore/security/get-started) to learn more.
 
 #### Setting up Xkit
 
-10. Create an Xkit account <a href="https://xkit.co/" target="_blank">here</a>. 
+10. Create an Xkit account [here](https://xkit.co/).
 
 11. Go to the *New Connector* tab and install a connector/s.
 
@@ -72,4 +72,4 @@ Rename the file to *firebase-key.json*
         NEXT_PUBLIC_XKIT_DOMAIN=<put_url_slug_here>
         
 ### Hooray, that was all!<br>
-To view the result, run `npm run dev` in the project folder and go to <a href="http://localhost:3000" target="_blank">http://localhost:3000</a>.
+To view the result, run `npm run dev` in the project folder and go to http://localhost:3000.
