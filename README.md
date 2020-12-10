@@ -33,12 +33,12 @@
 
 8. Open the *.env.local* file and put the Firebase SDK config details there like so:
 
-        NEXT_PUBLIC_FIREBASE_API_KEY=<put_api_key_here>
-        NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=<put_auth_domain_here>
-        NEXT_PUBLIC_FIREBASE_PROJECT_ID=<put_project_id_here>
-        NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=<put_storage_bucket_here>
-        NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=<put_messaging_sender_id>
-        NEXT_PUBLIC_FIREBASE_APP_ID=<put_app_id_here>
+       NEXT_PUBLIC_FIREBASE_API_KEY=<put_api_key_here>
+       NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=<put_auth_domain_here>
+       NEXT_PUBLIC_FIREBASE_PROJECT_ID=<put_project_id_here>
+       NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=<put_storage_bucket_here>
+       NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=<put_messaging_sender_id>
+       NEXT_PUBLIC_FIREBASE_APP_ID=<put_app_id_here>
         
 9. Go to Firebase project settings and click on *Service Accounts*.<br>
 Then on Firebase Admin SDK, *Create service account* and generate new private key. Drag and drop the downloaded file in the project folder.<br>
